@@ -5,4 +5,9 @@ library(ggplot2)
 ggplot(data, aes(x = `headcount of pupils`)) +
   geom_histogram(bins = 40, col = "grey10", fill = "grey60") +
   theme_minimal() +
-  labs(x = "Pupil headcount", y = "", caption = "Data from UK School Census 2022/23")
+  labs(
+    title = "Distribution of school sizes in England",
+    x = "Pupil headcount",
+    y = "",
+    caption = "Data from England School Census 2022/23"
+  )
